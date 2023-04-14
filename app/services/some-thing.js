@@ -4,27 +4,14 @@ import { tracked } from '@glimmer/tracking';
 
 export default class SomeThingService extends Service {
   @tracked foo = 'bar';
-  @tracked name = 'dariusz';
   @tracked count = 0;
 
   get computedFoo() {
     return `computed ${this.foo}`;
   }
 
-  get funFoo() {
-    return `fun ${this.foo}`;
-  }
-
-  get getName() {
-    return `welcome ${this.name}`;
-  }
-
-  testMethod1() {
+  getFoo() {
     this.foo = 'baz';
-  }
-
-  testName() {
-    this.name = 'mariusz';
   }
 
   calc() {
@@ -32,12 +19,12 @@ export default class SomeThingService extends Service {
     return `count: ${this.count}`;
   }
 
-  someComplicatedOtherMethod(x) {
-    return x * 2;
+  multiplyByTwo(number) {
+    return number * 2;
   }
 
-  calcFull(y) {
-    let result = this.someComplicatedOtherMethod(y);
+  getMultiplyByTwoResponse(number) {
+    let result = this.multiplyByTwo(number);
     return `Answer: ${result}`;
   }
 }

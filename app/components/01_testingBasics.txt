@@ -1,0 +1,62 @@
+// module('Unit | Service | some-thing', function (hooks) {
+//   setupTest(hooks);
+
+//   test('should correctly concat foo', function (assert) {
+//     const someThing = this.owner.lookup('service:some-thing');
+
+//     someThing.foo = 'baz';
+
+//     assert.strictEqual(someThing.computedFoo, 'computed baz');
+//   });
+
+//   test('should update foo on testMethod', function (assert) {
+//     const someThing = this.owner.lookup('service:some-thing');
+
+//     someThing.testMethod();
+
+//     assert.strictEqual(someThing.foo, 'baz');
+//   });
+
+//   test('should return incremened count on calc', function (assert) {
+//     const someThing = this.owner.lookup('service:some-thing');
+
+//     assert.strictEqual(someThing.calc(), 'count: 1');
+//     assert.strictEqual(someThing.calc(), 'count: 2');
+//   });
+
+//   test('testMethod2 should return result of someComplicatedOtherMethod', function (assert) {
+//     const someThing = this.owner.lookup('service:some-thing');
+
+//     const someThingOriginalMethod = someThing.someComplicatedOtherMethod;
+
+//     someThing.someComplicatedOtherMethod = function () {
+//       return 4;
+//     };
+
+//     assert.strictEqual(
+//       someThing.testMethod2(2),
+//       'Answer: 4',
+//       'testMethod2 is working'
+//     );
+
+//     someThing.someComplicatedOtherMethod = someThingOriginalMethod;
+//   });
+// });
+============================================================================================
+// module('Unit | Service | employees', function (hooks) {
+//   setupTest(hooks);
+
+//   test('hire adds a person to employees array', function (assert) {
+//     const employees = this.owner.lookup('service:employees');
+
+//     class MockPerson {
+//       title = 'Dr.';
+//       name = 'Zoe';
+//       addJob() {}
+//     }
+
+//     let person = new MockPerson();
+
+//     assert.strictEqual(employees.hire(person), 'Dr. Zoe is now an employee');
+//   });
+// });
